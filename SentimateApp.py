@@ -5,10 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from wordcloud import WordCloud
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import gdown
 
-url = f"https://drive.google.com/file/d/1O58jXKz_ifXRJVKi0fz3_Qa1gbCaCEpj/view?usp=sharing"
-gdown.download(url, "Reviews.csv", quiet=False)
 
 nltk.download('vader_lexicon')
 sia = SentimentIntensityAnalyzer()
